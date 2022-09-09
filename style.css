@@ -1,0 +1,313 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-item :hover {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+  color: white;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  margin-left: 30%;
+  padding: 1px;
+}
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border: 3px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+}
+.home-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+}
+
+/* SVG Animation */
+path {
+  translate: -52.2% -3%;
+}
+#brand-name2 {
+  translate: 0 -50%;
+  scale: 0.5;
+
+  animation: fillin 1s ease forwards 2.7s, borderfill 4.7s ease forwards 2s;
+}
+
+#brand-name2 path:nth-child(1) {
+  stroke-dasharray: 296.4px;
+  stroke-dashoffset: 296.4px;
+  animation: line-anim 2s ease forwards;
+}
+#brand-name2 path:nth-child(2) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#brand-name2 path:nth-child(3) {
+  stroke-dasharray: 558.4px;
+  stroke-dashoffset: 558.4px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#brand-name2 path:nth-child(4) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#brand-name2 path:nth-child(5) {
+  stroke-dasharray: 370px;
+  stroke-dashoffset: 370px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#brand-name2 path:nth-child(6) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#brand-name2 path:nth-child(7) {
+  stroke-dasharray: 373px;
+  stroke-dashoffset: 373px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#brand-name2 path:nth-child(8) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillin {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes borderfill {
+  from {
+    border-bottom: 0.5px solid;
+    border-image: linear-gradient(to right, black 0%, black 100%) 0;
+  }
+  to {
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+  }
+}
+/* Section 1 (About page) */
+.section--1 {
+  background-color: black;
+  /* height: 100vh; */
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+  padding-bottom: 20px;
+}
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-value {
+  font-family: "Oswald", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+}
+
+.about-info {
+  /* font-family: 'PT Mono', monospace; */
+  color: white;
+}
+
+.about-container {
+  margin-bottom: 20px;
+  align-self: center;
+  position: relative;
+}
+
+#about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-span {
+  font-family: "Oswald", sans-serif;
+  font-size: 200%;
+}
+
+/*Cards Animation */
+.cards1 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 2000ms;
+}
+
+.cards2 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 2000ms;
+}
+.cards3 {
+  opacity: 0;
+  scale: 0.1;
+  transition: 2000ms;
+}
+
+.cards.show {
+  transform: translateX(0);
+  opacity: 1;
+  scale: 1;
+}
+.row {
+  overflow: hidden;
+}
+.section--2 {
+  background-color: black;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+  padding-bottom: 20px;
+}
+
+.card {
+  margin: 10px 0 10px 0;
+  border: 2px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+}
+.card-body {
+  color: white;
+  background: black;
+}
+
+.section--3 {
+  background-color: black;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
+}
+
+.img-galery-container {
+  margin: 0 auto;
+  max-width: 700px;
+  max-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Useful Classes */
+.xy-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+  width: 100%;
+  padding-bottom: 66.667%;
+  background-color: rgb(0, 0, 0);
+}
+
+.image-holder {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.item-wrapper {
+  cursor: pointer;
+  width: 23%; /* arbitrary value */
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+}
+
+.gallery-item {
+  opacity: 0.5;
+}
+.gallery-item.active {
+  opacity: 1;
+}
+
+.controls {
+  font-size: 0;
+  border-top: none;
+}
+.move-btn {
+  display: inline-block;
+  width: 50%;
+  height: 20px;
+  color: black;
+  /* border: 3px solid; */
+  background-color: red;
+  padding: 0.2em 1.5em;
+  margin-bottom: 20px;
+}
+.move-btn:first-child {
+  border-right: none;
+}
+.move-btn.left {
+  cursor: pointer;
+}
+.move-btn.right {
+  cursor: pointer;
+}
