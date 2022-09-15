@@ -15,9 +15,9 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-.logo {
+#logo {
   position: absolute;
-  left: 50%;
+  left: 20%;
 }
 .navbar-brand {
   margin-left: 20px;
