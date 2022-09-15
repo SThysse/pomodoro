@@ -65,7 +65,7 @@ path {
 }
 #brand-name2 {
   translate: 0 -50%;
-  scale: 0.5;
+  scale: 0.7;
 
   animation: fillin 1s ease forwards 2.7s, borderfill 4.7s ease forwards 2s;
 }
