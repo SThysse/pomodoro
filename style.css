@@ -10,9 +10,7 @@ overflow-x:hidden;
 }
 /* NAVBAR */
 .navbar {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +23,11 @@ overflow-x:hidden;
     font-size: 1.5rem;
     margin: .5rem;
 }
-
+.navbar_links {
+  position: relative;
+  top: 0;
+  right: 0;
+}
 .navbar_links ul {
     position: relative;
     margin: 0.5;
