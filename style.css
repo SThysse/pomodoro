@@ -53,7 +53,7 @@ border-image: linear-gradient(to right, green 0%, white 50%, red 100%) 1;
 .toggle_button {
 position: absolute;
 top: 1.5rem;
-right: 10%;
+right: 5%;
 display: none;
 flex-direction: column;
 justify-content: space-between;
