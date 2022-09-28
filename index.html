@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<title>Pomodoro Restaurant</title>
+</head>
+<nav class="navbar">
+<div class="logo"><a class="navbar-brand" href="#"
+><img src="logo.png" alt="" width="170" height="50"
+/></a></div>
+<a  class="toggle_button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="navbar_links">
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Accommodation</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</nav>
+<section class="home">
+<div class="home-name">
+<svg
+id="brand-name2"
+width="620"
+height="220"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M329.048 205V127.24H348.344C353.016 127.24 356.728 128.104 359.48 129.832C362.296 131.496 364.344 133.928 365.624 137.128C366.904 140.328 367.544 144.2 367.544 148.744C367.544 152.84 366.808 156.392 365.336 159.4C363.928 162.408 361.816 164.744 359 166.408C356.184 168.008 352.664 168.808 348.44 168.808H339.896V205H329.048ZM339.896 161.032H344.888C348.024 161.032 350.488 160.68 352.28 159.976C354.072 159.272 355.352 158.056 356.12 156.328C356.888 154.536 357.272 152.04 357.272 148.84C357.272 145.128 356.984 142.28 356.408 140.296C355.896 138.312 354.776 136.936 353.048 136.168C351.32 135.4 348.632 135.016 344.984 135.016H339.896V161.032Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M423.845 205.864C418.597 205.864 414.405 204.84 411.269 202.792C408.133 200.744 405.893 197.832 404.549 194.056C403.205 190.216 402.533 185.736 402.533 180.616V151.144C402.533 146.024 403.205 141.64 404.549 137.992C405.957 134.28 408.197 131.464 411.269 129.544C414.405 127.56 418.597 126.568 423.845 126.568C429.093 126.568 433.253 127.56 436.325 129.544C439.397 131.528 441.605 134.344 442.949 137.992C444.357 141.64 445.061 146.024 445.061 151.144V180.712C445.061 185.768 444.357 190.184 442.949 193.96C441.605 197.736 439.397 200.68 436.325 202.792C433.253 204.84 429.093 205.864 423.845 205.864ZM423.845 197.32C426.725 197.32 428.901 196.744 430.373 195.592C431.845 194.376 432.837 192.712 433.349 190.6C433.861 188.424 434.117 185.896 434.117 183.016V148.936C434.117 146.056 433.861 143.592 433.349 141.544C432.837 139.432 431.845 137.832 430.373 136.744C428.901 135.592 426.725 135.016 423.845 135.016C420.965 135.016 418.757 135.592 417.221 136.744C415.749 137.832 414.757 139.432 414.245 141.544C413.733 143.592 413.477 146.056 413.477 148.936V183.016C413.477 185.896 413.733 188.424 414.245 190.6C414.757 192.712 415.749 194.376 417.221 195.592C418.757 196.744 420.965 197.32 423.845 197.32Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M484.331 205L485.771 127.24H496.427L510.155 190.312L523.979 127.24H534.539L535.979 205H527.243L526.379 148.552L513.227 205H507.083L494.027 148.552L493.163 205H484.331Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M596.57 205.864C591.322 205.864 587.13 204.84 583.994 202.792C580.858 200.744 578.618 197.832 577.274 194.056C575.93 190.216 575.258 185.736 575.258 180.616V151.144C575.258 146.024 575.93 141.64 577.274 137.992C578.682 134.28 580.922 131.464 583.994 129.544C587.13 127.56 591.322 126.568 596.57 126.568C601.818 126.568 605.978 127.56 609.05 129.544C612.122 131.528 614.33 134.344 615.674 137.992C617.082 141.64 617.786 146.024 617.786 151.144V180.712C617.786 185.768 617.082 190.184 615.674 193.96C614.33 197.736 612.122 200.68 609.05 202.792C605.978 204.84 601.818 205.864 596.57 205.864ZM596.57 197.32C599.45 197.32 601.626 196.744 603.098 195.592C604.57 194.376 605.562 192.712 606.074 190.6C606.586 188.424 606.842 185.896 606.842 183.016V148.936C606.842 146.056 606.586 143.592 606.074 141.544C605.562 139.432 604.57 137.832 603.098 136.744C601.626 135.592 599.45 135.016 596.57 135.016C593.69 135.016 591.482 135.592 589.946 136.744C588.474 137.832 587.482 139.432 586.97 141.544C586.458 143.592 586.202 146.056 586.202 148.936V183.016C586.202 185.896 586.458 188.424 586.97 190.6C587.482 192.712 588.474 194.376 589.946 195.592C591.482 196.744 593.69 197.32 596.57 197.32Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M657.248 205V127.24H674.144C679.904 127.24 684.448 128.136 687.776 129.928C691.168 131.656 693.568 134.28 694.976 137.8C696.448 141.32 697.184 145.704 697.184 150.952V179.56C697.184 185.064 696.448 189.704 694.976 193.48C693.568 197.256 691.232 200.136 687.968 202.12C684.768 204.04 680.448 205 675.008 205H657.248ZM668.096 197.224H674.24C678.208 197.224 681.024 196.456 682.688 194.92C684.352 193.384 685.344 191.144 685.664 188.2C686.048 185.256 686.24 181.704 686.24 177.544V152.296C686.24 148.264 685.984 145 685.472 142.504C684.96 140.008 683.84 138.184 682.112 137.032C680.384 135.88 677.664 135.304 673.952 135.304H668.096V197.224Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M756.545 205.864C751.297 205.864 747.105 204.84 743.969 202.792C740.833 200.744 738.593 197.832 737.249 194.056C735.905 190.216 735.233 185.736 735.233 180.616V151.144C735.233 146.024 735.905 141.64 737.249 137.992C738.657 134.28 740.897 131.464 743.969 129.544C747.105 127.56 751.297 126.568 756.545 126.568C761.793 126.568 765.953 127.56 769.025 129.544C772.097 131.528 774.305 134.344 775.649 137.992C777.057 141.64 777.761 146.024 777.761 151.144V180.712C777.761 185.768 777.057 190.184 775.649 193.96C774.305 197.736 772.097 200.68 769.025 202.792C765.953 204.84 761.793 205.864 756.545 205.864ZM756.545 197.32C759.425 197.32 761.601 196.744 763.073 195.592C764.545 194.376 765.537 192.712 766.049 190.6C766.561 188.424 766.817 185.896 766.817 183.016V148.936C766.817 146.056 766.561 143.592 766.049 141.544C765.537 139.432 764.545 137.832 763.073 136.744C761.601 135.592 759.425 135.016 756.545 135.016C753.665 135.016 751.457 135.592 749.921 136.744C748.449 137.832 747.457 139.432 746.945 141.544C746.433 143.592 746.177 146.056 746.177 148.936V183.016C746.177 185.896 746.433 188.424 746.945 190.6C747.457 192.712 748.449 194.376 749.921 195.592C751.457 196.744 753.665 197.32 756.545 197.32Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M817.223 205V127.24H832.871C838.055 127.24 842.343 127.944 845.735 129.352C849.127 130.696 851.623 132.904 853.223 135.976C854.887 138.984 855.719 142.952 855.719 147.88C855.719 150.888 855.399 153.64 854.759 156.136C854.119 158.568 853.095 160.648 851.687 162.376C850.279 164.04 848.423 165.256 846.119 166.024L857.159 205H846.695L836.519 168.52H828.071V205H817.223ZM828.071 160.744H832.199C835.271 160.744 837.767 160.36 839.687 159.592C841.607 158.824 843.015 157.512 843.911 155.656C844.807 153.8 845.255 151.208 845.255 147.88C845.255 143.336 844.423 140.072 842.759 138.088C841.095 136.04 837.799 135.016 832.871 135.016H828.071V160.744Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+<path
+d="M915.676 205.864C910.428 205.864 906.236 204.84 903.1 202.792C899.964 200.744 897.724 197.832 896.38 194.056C895.036 190.216 894.364 185.736 894.364 180.616V151.144C894.364 146.024 895.036 141.64 896.38 137.992C897.788 134.28 900.028 131.464 903.1 129.544C906.236 127.56 910.428 126.568 915.676 126.568C920.924 126.568 925.084 127.56 928.156 129.544C931.228 131.528 933.436 134.344 934.78 137.992C936.188 141.64 936.892 146.024 936.892 151.144V180.712C936.892 185.768 936.188 190.184 934.78 193.96C933.436 197.736 931.228 200.68 928.156 202.792C925.084 204.84 920.924 205.864 915.676 205.864ZM915.676 197.32C918.556 197.32 920.732 196.744 922.204 195.592C923.676 194.376 924.668 192.712 925.18 190.6C925.692 188.424 925.948 185.896 925.948 183.016V148.936C925.948 146.056 925.692 143.592 925.18 141.544C924.668 139.432 923.676 137.832 922.204 136.744C920.732 135.592 918.556 135.016 915.676 135.016C912.796 135.016 910.588 135.592 909.052 136.744C907.58 137.832 906.588 139.432 906.076 141.544C905.564 143.592 905.308 146.056 905.308 148.936V183.016C905.308 185.896 905.564 188.424 906.076 190.6C906.588 192.712 907.58 194.376 909.052 195.592C910.588 196.744 912.796 197.32 915.676 197.32Z"
+stroke="white"
+stroke-width="2"
+mask="url(#path-2-outside-1_1_2)"
+/>
+</svg>
+</div>
+</section>
+<div class="intro">
+<div class="intro-text">
+<h1 class="hide">
+<span class="text intro-1">INSPIRED</span>
+</h1>
+<h1 class="hide">
+<span class="text intro-2">ITALIAN</span>
+</h1>
+<h1 class="hide">
+<span class="text intro-3">FOOD</span>
+</h1>
+</div>
+</div>
+<section class="about-section">
+<div class="about-container">
+<div class="about-text-container">
+<div class="about-info">
+<h3 class="about-text-header">About us</h3>
+<p class="about-info-text">
+Pomodoro is a charming family tratoria in the heart of the Wilderness Village. It is the meeting place of the locals and you will always find it buzzing with activity. The outside terraces offer a front row seat of the village activities which, together with the laid-back atmosphere and great food, makes it the perfect place to while away the hours. Owner Claudio will warmly welcome you to this restaurant which they have worked so hard to make the best in the Wilderness.
+</p>
+<h3 class="about-text-header">Inspired Italian Food</h3>
+<p class="about-info-text">
+The pizzas are possibly the best on the Garden Route and the beautiful salads, antipasto, pastas, grills and seafood never fail to satisfy.
+All dishes are based on traditional recipes that Werner sourced while travelling through Italy and working on private yachts on the Mediterranean for many years. A relaxed, warm atmosphere, seriously good Italian food, great wines and friendly service make this one of the best food stops on the Garden Route.
+</p>
+</div>
+</div>
+    <div class="about-img about-img1">
+        <img src="img/m_DSC_6101.jpg" alt="Pomodoro-Building" class="about-img-img">
+    </div>
+</div>
+</section>
+<section class="menu-section">
+<div class="menu-header">
+<h2 class="menu-header-text">Menu</h2>
+</div>
+<div class="menu-downlaod">
+<a class="menu-link" href="PomodoroMenu.pdf">Click To Download Our Full Menu</a>
+</div>
+<div class="specials-header">
+<h2 class="specials-header-text">Current Specials</h2>
+</div>
+<div class="specials-container">
+<div class="specials-card">
+<img class="specials-img" src="img/cocktails-1024x640.jpg">
+<h3 class="specials-name">Dish name</h3>
+<p class="specials-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+<h3 class="=specials-price">R120</h3>
+</div>
+<div class="specials-card">
+<img class="specials-img" src="img/cheeseplatter-1024x640.jpg">
+<h3 class="specials-name">Dish Name</h3>
+<p class="specials-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+<h3 class="=specials-price">R120</h3>
+</div>
+<div class="specials-card">
+<img class="specials-img" src="img/butternutpizza-1024x640.jpg">
+<h3 class="specials-name">Dish Name</h3>
+<p class="specials-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+<h3 class="=specials-price">R120</h3>
+</div>
+</div>
+</section>
+<section class="gallery-section">
+<div class="gallery-header">
+<h2 class="gallery-header-text">Gallery</h2>
+</div>
+<div class="slideshow-container fade">
+<!-- Full images with numbers and message Info -->
+<div class="Containers">
+<img src="img/m_DSC_6101.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/coffee1-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/amorepizza-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/m_DSC_6098.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/m_DSC_6181.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/cocktails-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/cheeseplatter-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/m_DSC_6159.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/parmawinepizza-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/wines-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/veal-1024x640.jpg" style="width:100%">
+</div>
+<div class="Containers">
+<img src="img/m_DSC_6169.jpg" style="width:100%">
+</div>
+<!-- Back and forward buttons -->
+<a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The circles/dots -->
+<div style="text-align:center">
+<span class="dots dots1" onclick="currentSlide(1)"></span>
+<span class="dots dots2" onclick="currentSlide(2)"></span>
+<span class="dots dots3" onclick="currentSlide(3)"></span>
+<span class="dots dots4" onclick="currentSlide(4)"></span>
+<span class="dots dots5" onclick="currentSlide(5)"></span>
+<span class="dots dots6" onclick="currentSlide(6)"></span>
+<span class="dots dots7" onclick="currentSlide(7)"></span>
+<span class="dots dots8" onclick="currentSlide(8)"></span>
+<span class="dots dots9" onclick="currentSlide(9)"></span>
+<span class="dots dots10" onclick="currentSlide(10)"></span>
+<span class="dots dots11" onclick="currentSlide(11)"></span>
+<span class="dots dots12" onclick="currentSlide(12)"></span>
+</div>
+<div class="group-bookings">
+<h3 class="group-bookings-text">
+For Group Bookings and Functions<br>Please Contact a Manager for details
+</h3><br>
+<div class="booking-contact-details">
+<p>Call us at Tel:<a href="tel:+27448771403">+27 44 877 1403</a></p><br>
+<p>Or Send an email at :<a href = "mailto: pomodoro@etime.co.za">pomodoro@etime.co.za</a></p>
+</div>
+</div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+
+</body>
+</html>
